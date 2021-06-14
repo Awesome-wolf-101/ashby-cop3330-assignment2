@@ -14,13 +14,13 @@ public class Application {
     public static void main(String[] args)
     {
 
-        EmployeeSorter employeesorter = new EmployeeSorter();
-        Employee[] EmployeeArray = employeesorter.EmployeeArrayMaker();
-        List<Map<String, String>> myList = employeesorter.ListMaker(EmployeeArray);
-        String SearchString = employeesorter.InputTaker();
-        List<Map<String, String>> FinalList = employeesorter.SearchEmployeeMapList(myList, SearchString);
-        FinalList = employeesorter.SortEmployeeMapList(FinalList);
-        String OutPutString =  employeesorter.OutPutTime(FinalList);
+        EmployeeSearcher employeesearcher = new EmployeeSearcher();
+        Employee[] EmployeeArray = employeesearcher.EmployeeArrayMaker();
+        List<Map<String, String>> myList = employeesearcher.ListMaker(EmployeeArray);
+        String SearchString = employeesearcher.InputTaker();
+        List<Map<String, String>> FinalList = employeesearcher.SearchEmployeeMapList(myList, SearchString);
+        FinalList = employeesearcher.SortEmployeeMapList(FinalList);
+        String OutPutString =  employeesearcher.OutPutTime(FinalList);
         System.out.println(OutPutString);
     }
 }

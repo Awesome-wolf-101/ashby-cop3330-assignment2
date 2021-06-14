@@ -10,7 +10,6 @@ public class PaymentCalculator {
         double n =   (Math.log(1 + b/p * (1 - Math.pow(1 + i, 30))) / Math.log(1 + i))/30;
 
         int result = (int) Math.ceil(-n);
-        System.out.println(result);
         return result;
     }
 }

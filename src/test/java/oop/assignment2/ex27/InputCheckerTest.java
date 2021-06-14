@@ -12,7 +12,11 @@ import static org.junit.jupiter.api.Assertions.*;
 class InputCheckerTest {
 
     @Test
-    void validateInput() {
+    void ZipGoodEnough() {
+        InputChecker inputchecker = new InputChecker();
+        boolean actual = inputchecker.ZipGoodEnough("ABCDE");
+        boolean expected = false;
+        assertEquals(expected, actual);
     }
 
     @Test

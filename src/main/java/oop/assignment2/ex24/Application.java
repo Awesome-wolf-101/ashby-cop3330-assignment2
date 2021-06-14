@@ -25,11 +25,11 @@ public class Application {
     {
         if(anagramTrue)
         {
-            return str1 + " and " + str2 + " are anagrams";
+            return str1 + " and " + str2 + " are anagrams.";
         }
         else
         {
-            return str1 + " and " + str2 + " are not anagrams";
+            return str1 + " and " + str2 + " are not anagrams.";
         }
     }
 

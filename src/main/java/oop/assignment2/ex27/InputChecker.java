@@ -26,14 +26,11 @@ public class InputChecker {
         {
             RetString += "\nThe last name must be filled in.";
         }
-        if(Zip.length() != 6)
+        if(!ZipGoodEnough(Zip))
         {
             RetString += "\nThe zipcode must be a 5 digit number.";
         }
-        if(!OnlyNums(Zip))
-        {
-            RetString += "\nThe zipcode must be only numbers.";
-        }
+
         if(!IDGoodEnough(EmployeeID))
         {
             RetString += "\nThe employee ID must be in the format of AA-1234.";
@@ -99,5 +96,17 @@ public class InputChecker {
 
         return true;
 
+    }
+
+    public static boolean ZipGoodEnough(String input) {
+        if(input.length() != 6)
+        {
+            return false;
+        }
+        else if(!OnlyNums(input))
+        {
+            return false;
+        }
+        return true;
     }
 }

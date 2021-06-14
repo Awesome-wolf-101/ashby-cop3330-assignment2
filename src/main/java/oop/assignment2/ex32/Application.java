@@ -29,6 +29,10 @@ public class Application {
                 NumberGuesser.PlayGuessNum();
                 System.out.println("Do you wish to play again (Y/N)? ");
                 inputString2 = in.next();
+                if (inputString2.equals("n"))
+                {
+                    break;
+                }
             }
         }
 

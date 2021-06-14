@@ -8,7 +8,7 @@ import oop.assignment2.ex40.Employee;
 
 import java.util.*;
 
-public class EmployeeSorter {
+public class EmployeeSearcher {
     private static final Scanner in = new Scanner(System.in);
     private static String inputString1;
     private static String inputString2;
@@ -66,7 +66,7 @@ public class EmployeeSorter {
 
         public static String OutPutTime(List<Map<String, String>> myList)
         {
-            String OutputString = "Name                | Position          | Separation Date" + "\n--------------------|-------------------|----------------";
+            String OutputString ="Results: \n" + "Name                | Position          | Separation Date" + "\n--------------------|-------------------|----------------";
             for (int i=0; i<myList.size(); i++) {
                 String str1 = myList.get(i).get("FirstName") + " " +myList.get(i).get("LastName");
                 String str4 = String.format("%-20s|", str1);
